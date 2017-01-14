@@ -1,4 +1,3 @@
-setwd("https://www.dropbox.com/sh/3p0yhtbjj7zlxug/AABqp4jXUrY5DAKCynsuXVvVa?dl=0")
 library(igraph)
 library(shiny)
 library(networkD3)

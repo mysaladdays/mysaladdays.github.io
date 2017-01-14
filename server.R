@@ -1,10 +1,8 @@
-setwd("C:/Users/Xu/Documents/Research/results")
+setwd("https://www.dropbox.com/sh/3p0yhtbjj7zlxug/AABqp4jXUrY5DAKCynsuXVvVa?dl=0")
 library(igraph)
 library(shiny)
 library(networkD3)
-rsconnect::setAccountInfo(name='mysaladdays',
-                          token='B3B93232AE0E1AB5B0DD365F6B0C878A',
-                          secret='6kF9F2hatQSvC5JYJM1mRfWu14qCViXbySN6exMB')
+
 # Basic Static Graph
 data=read.csv("grangermqv.csv",header=TRUE)
 #nodes=data.frame(name=c("AAPL","AIG","BAC","CITI","JNJ","JPM","MSFT","WFC","XOM","SPY","XLK","XLF"),type=c(1,2,2,2,3,2,1,2,4,5,5,5),

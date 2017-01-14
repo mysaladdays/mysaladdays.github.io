@@ -22,3 +22,21 @@ server <- function(input, output) {
                  zoom=TRUE, legend=TRUE)
   })
 }
+
+#### UI ####
+
+ui <- shinyUI(fluidPage(
+  
+  titlePanel("Jump Spillover Effects Network"),
+  
+  mainPanel(
+    tabsetPanel(
+      tabPanel("Jump Spillover Effects Network Monthly", forceNetworkOutput("force1")),
+      tabPanel("Jump Spillover Effects Network Monthly Large Jumps at 3-Sigma Level", forceNetworkOutput("force2")),
+      tabPanel("Jump Spillover Effects Network Monthly Large Jumps at 5-Sigma Level", forceNetworkOutput("force3"))
+    )
+  )
+))
+
+#### Run ####
+shinyApp(ui = ui, server = server)

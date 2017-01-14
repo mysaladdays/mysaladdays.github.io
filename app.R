@@ -6,9 +6,9 @@ library(networkD3)
 data1=read.csv("grangermqv.csv",header=TRUE)
 data2=read.csv("grangermqv3.csv",header=TRUE)
 data3=read.csv("grangermqv5.csv",header=TRUE)
-data4=read.csv("grangerwqv.csv",header=TRUE)
-data5=read.csv("grangerwqv3.csv",header=TRUE)
-data6=read.csv("grangerwqv5.csv",header=TRUE)
+#data4=read.csv("grangerwqv.csv",header=TRUE)
+#data5=read.csv("grangerwqvc.csv",header=TRUE)
+#data6=read.csv("grangerwqvp.csv",header=TRUE)
 nodes=read.csv("nodes.csv",header=TRUE)
 links1=data.frame(from=data1$source,to=data1$target,order=data1$Order,sign=data1$Sign)
 links2=data.frame(from=data2$source,to=data2$target,order=data2$Order,sign=data2$Sign)
@@ -41,26 +41,26 @@ server <- function(input, output) {
                  zoom=TRUE, legend=TRUE)
   })
   
-      output$force4 <- renderForceNetwork({
-    forceNetwork(Links = links4-1, Nodes = nodes, Source = "from", 
-                 Target = "to", NodeID = "name", Nodesize="size", fontSize=15, 
-                 linkDistance=170, Group = "la", opacity = 1,opacityNoHover = FALSE, 
-                 zoom=TRUE, legend=TRUE)
-  })
+      #output$force4 <- renderForceNetwork({
+    #forceNetwork(Links = links4-1, Nodes = nodes, Source = "from", 
+     #            Target = "to", NodeID = "name", Nodesize="size", fontSize=15, 
+      #           linkDistance=170, Group = "la", opacity = 1,opacityNoHover = FALSE, 
+       #          zoom=TRUE, legend=TRUE)
+ # })
   
-      output$force5 <- renderForceNetwork({
-    forceNetwork(Links = links5-1, Nodes = nodes, Source = "from", 
-                 Target = "to", NodeID = "name", Nodesize="size", fontSize=15, 
-                 linkDistance=170, Group = "la", opacity = 1,opacityNoHover = FALSE, 
-                 zoom=TRUE, legend=TRUE)
-  })
+  #    output$force5 <- renderForceNetwork({
+   # forceNetwork(Links = links5-1, Nodes = nodes, Source = "from", 
+    #             Target = "to", NodeID = "name", Nodesize="size", fontSize=15, 
+     #            linkDistance=170, Group = "la", opacity = 1,opacityNoHover = FALSE, 
+      #           zoom=TRUE, legend=TRUE)
+  # })
   
-      output$force6 <- renderForceNetwork({
-    forceNetwork(Links = links6-1, Nodes = nodes, Source = "from", 
-                 Target = "to", NodeID = "name", Nodesize="size", fontSize=15, 
-                 linkDistance=170, Group = "la", opacity = 1,opacityNoHover = FALSE, 
-                 zoom=TRUE, legend=TRUE)
-  })
+   #   output$force6 <- renderForceNetwork({
+   # forceNetwork(Links = links6-1, Nodes = nodes, Source = "from", 
+    #             Target = "to", NodeID = "name", Nodesize="size", fontSize=15, 
+     #            linkDistance=170, Group = "la", opacity = 1,opacityNoHover = FALSE, 
+      #           zoom=TRUE, legend=TRUE)
+  # })
   
 }
 

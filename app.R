@@ -74,7 +74,7 @@ ui <- shinyUI(fluidPage(
     tabsetPanel(
       tabPanel("Risk Contagion Network Monthly", forceNetworkOutput("force1")),
       tabPanel("Risk Contagion Network Monthly Large Jumps at 3-Sigma Level", forceNetworkOutput("force2")),
-      tabPanel("Risk Contagion Network Monthly Large Jumps at 5-Sigma Level", forceNetworkOutput("force3")),
+      tabPanel("Risk Contagion Network Monthly Large Jumps at 5-Sigma Level", forceNetworkOutput("force3"))
  #     tabPanel("Risk Contagion Network Weekly", forceNetworkOutput("force4")),
   #    tabPanel("Risk Contagion Network Weekly Large Jumps at 3-Sigma Level", forceNetworkOutput("force5")),
    #   tabPanel("Risk Contagion Network Weekly Large Jumps at 5-Sigma Level", forceNetworkOutput("force6"))

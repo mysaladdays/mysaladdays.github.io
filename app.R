@@ -21,42 +21,42 @@ links6=data.frame(from=data6$source,to=data6$target,order=data6$Order,sign=data6
 server <- function(input, output) {
   
   output$force1 <- renderForceNetwork({
-    forceNetwork(Links = links1, Nodes = nodes, Source = "from", 
+    forceNetwork(Links = links1, Nodes = nodes1, Source = "from", 
                  Target = "to", NodeID = "name", Nodesize="size", fontSize=15, 
                  linkDistance=170, Group = "la", opacity = 1,opacityNoHover = FALSE, 
                  zoom=TRUE, legend=TRUE)
   })
   
     output$force2 <- renderForceNetwork({
-    forceNetwork(Links = links2, Nodes = nodes, Source = "from", 
+    forceNetwork(Links = links2, Nodes = nodes2, Source = "from", 
                  Target = "to", NodeID = "name", Nodesize="size", fontSize=15, 
                  linkDistance=170, Group = "la", opacity = 1,opacityNoHover = FALSE, 
                  zoom=TRUE, legend=TRUE)
   })
   
     output$force3 <- renderForceNetwork({
-    forceNetwork(Links = links3, Nodes = nodes, Source = "from", 
+    forceNetwork(Links = links3, Nodes = nodes3, Source = "from", 
                  Target = "to", NodeID = "name", Nodesize="size", fontSize=15, 
                  linkDistance=170, Group = "la", opacity = 1,opacityNoHover = FALSE, 
                  zoom=TRUE, legend=TRUE)
   })
   
      output$force4 <- renderForceNetwork({
-    forceNetwork(Links = links4, Nodes = nodes, Source = "from", 
+    forceNetwork(Links = links4, Nodes = nodes4, Source = "from", 
                 Target = "to", NodeID = "name", Nodesize="size", fontSize=15, 
                  linkDistance=170, Group = "la", opacity = 1,opacityNoHover = FALSE, 
                  zoom=TRUE, legend=TRUE)
   })
   
      output$force5 <- renderForceNetwork({
-    forceNetwork(Links = links5, Nodes = nodes, Source = "from", 
+    forceNetwork(Links = links5, Nodes = nodes5, Source = "from", 
                  Target = "to", NodeID = "name", Nodesize="size", fontSize=15, 
                  linkDistance=170, Group = "la", opacity = 1,opacityNoHover = FALSE, 
                  zoom=TRUE, legend=TRUE)
    })
   
      output$force6 <- renderForceNetwork({
-    forceNetwork(Links = links6, Nodes = nodes, Source = "from", 
+    forceNetwork(Links = links6, Nodes = nodes6, Source = "from", 
                  Target = "to", NodeID = "name", Nodesize="size", fontSize=15, 
                  linkDistance=170, Group = "la", opacity = 1,opacityNoHover = FALSE, 
                  zoom=TRUE, legend=TRUE)

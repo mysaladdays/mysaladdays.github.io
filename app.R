@@ -42,21 +42,21 @@ server <- function(input, output) {
   })
   
      output$force4 <- renderForceNetwork({
-    forceNetwork(Links = links4-1, Nodes = nodes, Source = "from", 
+    forceNetwork(Links = links4, Nodes = nodes, Source = "from", 
                 Target = "to", NodeID = "name", Nodesize="size", fontSize=15, 
                  linkDistance=170, Group = "la", opacity = 1,opacityNoHover = FALSE, 
                  zoom=TRUE, legend=TRUE)
   })
   
      output$force5 <- renderForceNetwork({
-    forceNetwork(Links = links5-1, Nodes = nodes, Source = "from", 
+    forceNetwork(Links = links5, Nodes = nodes, Source = "from", 
                  Target = "to", NodeID = "name", Nodesize="size", fontSize=15, 
                  linkDistance=170, Group = "la", opacity = 1,opacityNoHover = FALSE, 
                  zoom=TRUE, legend=TRUE)
    })
   
      output$force6 <- renderForceNetwork({
-    forceNetwork(Links = links6-1, Nodes = nodes, Source = "from", 
+    forceNetwork(Links = links6, Nodes = nodes, Source = "from", 
                  Target = "to", NodeID = "name", Nodesize="size", fontSize=15, 
                  linkDistance=170, Group = "la", opacity = 1,opacityNoHover = FALSE, 
                  zoom=TRUE, legend=TRUE)

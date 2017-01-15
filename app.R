@@ -7,8 +7,8 @@ data1=read.csv("grangermqv.csv",header=TRUE)
 data2=read.csv("grangermqv3.csv",header=TRUE)
 data3=read.csv("grangermqv5.csv",header=TRUE)
 data4=read.csv("grangerwqv.csv",header=TRUE)
-data5=read.csv("grangerwqvc.csv",header=TRUE)
-data6=read.csv("grangerwqvp.csv",header=TRUE)
+data5=read.csv("grangerwqv3.csv",header=TRUE)
+data6=read.csv("grangerwqv5.csv",header=TRUE)
 nodes=read.csv("nodes.csv",header=TRUE)
 links1=data.frame(from=data1$source,to=data1$target,order=data1$Order,sign=data1$Sign)
 links2=data.frame(from=data2$source,to=data2$target,order=data2$Order,sign=data2$Sign)
@@ -75,9 +75,9 @@ ui <- shinyUI(fluidPage(
       tabPanel("Risk Contagion Network Monthly", forceNetworkOutput("force1")),
       tabPanel("Risk Contagion Network Monthly Large Jumps at 3-Sigma Level", forceNetworkOutput("force2")),
       tabPanel("Risk Contagion Network Monthly Large Jumps at 5-Sigma Level", forceNetworkOutput("force3"))
- #     tabPanel("Risk Contagion Network Weekly", forceNetworkOutput("force4")),
-  #    tabPanel("Risk Contagion Network Weekly Large Jumps at 3-Sigma Level", forceNetworkOutput("force5")),
-   #   tabPanel("Risk Contagion Network Weekly Large Jumps at 5-Sigma Level", forceNetworkOutput("force6"))
+      tabPanel("Risk Contagion Network Weekly", forceNetworkOutput("force4")),
+      tabPanel("Risk Contagion Network Weekly Large Jumps at 3-Sigma Level", forceNetworkOutput("force5")),
+      tabPanel("Risk Contagion Network Weekly Large Jumps at 5-Sigma Level", forceNetworkOutput("force6"))
     )
   )
 ))

@@ -1,0 +1,15 @@
+nodes,id,name,type,la,size
+0,AAPL,AAPL,1,Tech,300
+1,AIG,AIG,2,Finance,300
+2,BAC,BAC,2,Finance,360
+3,CITI,CITI,2,Finance,360
+4,JNJ,JNJ,3,Health,300
+5,JPM,JPM,2,Finance,180
+6,MSFT,MSFT,1,Tech,240
+7,WFC,WFC,2,Finance,360
+8,XOM,XOM,4,Energy,240
+9,SPY,SPY,5,Index,240
+10,XLK,XLK,5,Index,300
+11,XLF,XLF,5,Index,300
+12,TED,TED,5,Index,180
+13,VIX,VIX,5,Index,180
